@@ -128,7 +128,7 @@ function getStatusText(saleStatus) {
     if (!saleStatus) return "現貨供應中";
     if (saleStatus.includes("售完")) return "已售完";
     if (saleStatus.includes("冷凍")) return "冷凍販售";
-    if (saleStatus.includes("有熱")) return "現貨販售中";
+    if (saleStatus.includes("有熱")) return "只有熱的";
     return saleStatus;
 }
 
