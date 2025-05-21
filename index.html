@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>劉家肉粽 - 今日供應</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/招牌粽.png" alt="劉家肉粽" class="logo">
+        <div class="store-info">
+            <div>營業時間: 10:00-20:00</div>
+            <div>電話: (02) 2638-0888</div>
+            <div>地址: 新北市石門區崁子腳58之18</div>
+        </div>
+    </div>
+
+    <h1>今日肉粽供應情況</h1>
+
+    <div class="last-updated">最後更新: <span id="update-time">載入中...</span></div>
+
+    <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">全部品項</button>
+        <button class="filter-btn" data-filter="in-stock">現貨供應</button>
+        <button class="filter-btn" data-filter="frozen">冷凍庫存</button>
+        <button class="filter-btn" data-filter="sold-out">已售完</button>
+    </div>
+
+    <div id="menu-container">
+        <div class="loading">載入肉粽品項中...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
